@@ -1,0 +1,91 @@
+📌 Backend - E-Learning Platform
+
+This repository contains the backend of the E-Learning Platform, developed using Spring Boot and following a monolithic architecture. The backend is responsible for user authentication, course management, quizzes, and certification.
+
+🚀 Features
+
+User Management: Registration, login, JWT authentication, and role-based access (Admin/User).
+
+Course Service: Add, update, view, and delete courses.
+
+Quiz Service: Manage questions, attempt quizzes, and evaluate results.
+
+Certificate Service: Generate certificates for passed quizzes.
+
+Security: JWT-based authentication across all services.
+
+Database: MySQL and MongoDB integration for persistence.
+
+🏗️ Tech Stack
+
+Language: Java 17+
+
+Framework: Spring Boot (REST APIs, Spring Security, JPA)
+
+Databases: MySQL
+
+Authentication: JWT & bcrypt
+
+Build Tool: Maven
+
+Other Tools: Git, Jenkins, Kubernetes (optional for deployment)
+
+⚙️ Setup & Installation
+
+Clone the repository
+
+git clone https://github.com/your-username/elearning-backend.git
+cd elearning-backend
+
+
+Configure Databases
+
+Update application.properties / application.yml with your MySQL & MongoDB credentials.
+
+Build & Run
+
+mvn clean install
+mvn spring-boot:run
+
+🔑 API Endpoints
+User Service
+
+POST /api/users/register → Register new user
+
+POST /api/users/login → Login & get JWT token
+
+GET /api/users/me → Get logged-in user profile
+
+Course Service
+
+GET /api/courses → View all courses
+
+POST /api/courses → Add new course (Admin only)
+
+DELETE /api/courses/{id} → Delete course (Admin only)
+
+Quiz Service
+
+GET /api/quizzes/{id} → Fetch quiz
+
+POST /api/quizzes/attempt → Attempt quiz
+
+GET /api/quizzes/result/{id} → Get result
+
+Certificate Service
+
+GET /api/certificates/{userId} → Download certificate
+
+✅ Future Enhancements
+
+Add email notifications.
+
+Integrate third-party payment gateway.
+
+Analytics for user progress.
+
+👨‍💻 Contributors
+
+Vishal Patil (Backend Developer)
+
+Gajanan Khalse (Frontend Developer)
