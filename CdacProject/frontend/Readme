@@ -1,0 +1,99 @@
+🎨 Frontend - E-Learning Platform
+
+This repository contains the frontend of the E-Learning Platform, built using React. The frontend provides an interactive user interface for learners and administrators to access courses, attempt quizzes, manage content, and download certificates.
+
+🚀 Features
+
+Authentication: Register and login with JWT integration.
+
+Role-based Dashboards:
+
+User: Browse courses, attempt quizzes, view results, download certificates.
+
+Admin: Manage courses, users, and quizzes.
+
+Responsive UI with modern design.
+
+API Integration: Connects to backend
+
+State Management using React Hooks & Context API (or Redux if extended).
+
+Secure Routing: Protected routes with JWT validation.
+
+🏗️ Tech Stack
+
+Frontend Framework: React 18+
+
+UI: Tailwind CSS / Bootstrap (choose based on your project)
+
+State Management: Context API / Redux
+
+Routing: React Router DOM
+
+Authentication: JWT stored in localStorage
+
+API Calls: Axios / Fetch
+
+⚙️ Setup & Installation
+
+Clone the repository
+
+git clone https://github.com/your-username/elearning-frontend.git
+cd elearning-frontend
+
+
+Install dependencies
+
+npm install
+
+
+Configure API base URL
+
+Update the API endpoint in src/config.js (e.g., backend running on http://localhost:8080).
+
+Run the application
+
+npm start
+
+
+Build for production
+
+npm run build
+
+🔑 Available Pages
+Public
+
+/register → User registration
+
+/login → User login
+
+User Dashboard
+
+/courses → Browse available courses
+
+/quizzes → Attempt quizzes
+
+/results → View quiz results
+
+/certificates → Download earned certificates
+
+Admin Dashboard
+
+/admin/courses → Add / update / delete courses
+
+/admin/users → Manage users
+
+/admin/quizzes → Manage quizzes
+
+✅ Future Enhancements
+
+Dark mode UI.
+
+Profile customization.
+
+Leaderboard for quiz scores.
+
+Live chat/discussion forums.
+
+
+[Your teammate’s name]
